@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Alberta trails, mountain views and outdoor activities.">
+    <title>Explore Alberta Trails</title>
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0.0">
+    <script src="js/main.js?v=1.0.0" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="#home">Explore <span>Alberta</span></a>
+
+        <nav>
+            <a href="#trails">Trails</a>
+            <a href="#weather">Weather</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main id="home">
+
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">GET OUT THERE</p>
+
+                <h1>Find your next Alberta adventure.</h1>
+
+                <p>
+                    Explore Alberta's forests, mountains and lakes.
+                    Find a new place to visit and enjoy the outdoors.
+                </p>
+
+                <a class="button button-light" href="#trails">Explore Trails</a>
+            </div>
+
+            <div class="hero-art" role="img" aria-label="Illustration of mountains, trees and a trail">
+                <div class="sun"></div>
+                <div class="mountain mountain-back"></div>
+                <div class="mountain mountain-front"></div>
+                <div class="tree tree-one"></div>
+                <div class="tree tree-two"></div>
+                <div class="trail"></div>
+            </div>
+        </section>
+
+        <section class="section" id="trails">
+
+            <div class="section-heading">
+                <p class="eyebrow">EXPLORE ALBERTA</p>
+                <h2>Explore different trails</h2>
+
+                <p>
+                    Alberta has many different outdoor areas to explore.
+                    Here are a few types of trails to get started.
+                </p>
+            </div>
+
+            <div class="trail-grid">
+
+                <article class="trail-card">
+                    <div class="card-art forest-art" aria-hidden="true">
+                        <span>01</span>
+                    </div>
+
+                    <div class="card-copy">
+                        <p class="tag">EASY</p>
+                        <h3>Forest Trails</h3>
+                        <p>Enjoy a relaxing walk through Alberta's forests.</p>
+                    </div>
+                </article>
+
+                <article class="trail-card">
+                    <div class="card-art mountain-art" aria-hidden="true">
+                        <span>02</span>
+                    </div>
+
+                    <div class="card-copy">
+                        <p class="tag">ADVENTURE</p>
+                        <h3>Mountain Trails</h3>
+                        <p>Explore mountain paths and enjoy beautiful views.</p>
+                    </div>
+                </article>
+
+                <article class="trail-card">
+                    <div class="card-art lake-art" aria-hidden="true">
+                        <span>03</span>
+                    </div>
+
+                    <div class="card-copy">
+                        <p class="tag">RELAXING</p>
+                        <h3>Lake Trails</h3>
+                        <p>Walk beside the water and enjoy the scenery.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="weather-section" id="weather">
+
+            <div>
+                <p class="eyebrow">CHECK THE WEATHER</p>
+                <h2>Calgary Weather</h2>
+
+                <p>
+                    Check the current temperature before planning
+                    your next outdoor activity.
+                </p>
+            </div>
+
+            <div class="weather-panel" aria-live="polite">
+                <p class="weather-label">CURRENT TEMPERATURE</p>
+
+                <p class="temperature" id="temperature">--°C</p>
+
+                <p id="weather-status">Loading weather...</p>
+
+                <button class="button button-dark" id="refresh-weather" type="button">
+                    Refresh Weather
+                </button>
+            </div>
+
+        </section>
+
+        <section class="section contact-section" id="contact">
+
+            <div class="section-heading">
+                <p class="eyebrow">CONTACT US</p>
+                <h2>Send us a message</h2>
+
+                <p>
+                    Fill out the form below. This is a demonstration
+                    form and does not actually send your information.
+                </p>
+            </div>
+
+            <form id="contact-form" novalidate>
+
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"
+                           autocomplete="name" minlength="2"
+                           maxlength="60" required>
+
+                    <small class="field-error" id="name-error"></small>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                           autocomplete="email" maxlength="120" required>
+
+                    <small class="field-error" id="email-error"></small>
+                </div>
+
+                <button class="button button-dark" type="submit">
+                    Submit
+                </button>
+
+                <p class="form-message" id="form-message" role="status"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Explore Alberta Trails</p>
+        <a href="#home">Back to Top</a>
+    </footer>
+
+</body>
+</html>
